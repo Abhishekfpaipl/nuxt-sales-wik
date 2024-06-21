@@ -1,6 +1,6 @@
 <template>
     <div style="padding-top: 70px;">
-        <div class="text-center fw-bold py-5 text-white" style="background-color: #125252;">
+        <div class="text-center fw-bold py-5 text-white" style="background-color: var(--bg-primary)">
             <p class="fs-1">About Us</p>
             <!-- <p class="fs-5">LOOKING FOR A CAREER, JOIN US !</p> -->
         </div>
