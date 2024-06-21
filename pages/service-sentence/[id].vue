@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NavBar brandColorOne="#125252" brandTextColor="#77E6B5" :brandLogo="brandLogo" brandName="workwity"
+    <NavBar brandColorOne="#014C75" brandTextColor="#77E6B5" :brandLogo="brandLogo" brandName="workwity"
       brandTagLine="Your Productivity Partner" :brandLinks="topLinks" />
     <div class="" style="padding-top: 70px; background-color:#125252 ">
       <div class="container mb-3 py-5">
@@ -12,8 +12,7 @@
       </div>
     </div>
     <div class="container">
-      <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-3 my-5">
-        {{ filteredSentences.length }}
+      <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-3 my-5"> 
         <div class="col" v-for="(sentence, index) in filteredSentences" :key="index">
           <router-link :to="'/service/' + generateSlug(sentence)" class="card text-decoration-none">
             <div class="card-body py-0" :style="{ backgroundColor: randomColors[index] }">
@@ -30,7 +29,7 @@
 </template>
 
 <script>
-import logo from '~/assets/';
+import logo from '~/assets/logo.svg';
 export default {
   data() {
     return {
